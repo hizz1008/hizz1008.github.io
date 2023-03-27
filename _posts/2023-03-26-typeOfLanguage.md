@@ -1,8 +1,11 @@
 ---
 layout: single
 title: "동적 타이핑, 할당문"
-categories: coding
+categories: code
 tags: javascript-deep-dive
+author_profile: false
+sidebar:
+  nav: "counts"
 ---
 
 # 동적 타이핑
