@@ -1,7 +1,8 @@
 ---
 layout: single
 title: "동적 타이핑, 할당문"
-categories: 자바스크립트-deep-dive
+categories: javascript-deep-dive
+tags: javascript
 ---
 
 # 동적 타이핑
