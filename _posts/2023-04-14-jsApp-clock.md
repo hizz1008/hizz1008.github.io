@@ -62,3 +62,9 @@ function getClock() {
 getClock();
 setInterval(getClock, 1000);
 ```
+
+date object를 이용하여 시간, 분, 초에 대한 변수를 설정해주었다.<br>
+padStart란 원하는 자릿 수 만큼 해당 문구를 채워넣는 기능으로<br>
+기존 1초, 2초의 형식으로 표현되던 숫자를 01, 02로 변경하기 위해 사용하였다.<br>
+코드가 실행될 때 바로 getClock함수를 실행한 뒤<br>
+setInterval로 1 초마다 재실행 한다.
