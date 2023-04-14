@@ -16,14 +16,13 @@ interval과 setTimeout이라는 개념을 알아야 한다.
 
 ## interval과 setTimeout의 차이점
 
-interval은 "매번" 일어나야 하는 무언가를 말한다.
-예를 들어 "매 2초" 라고 하면 이것은 interval이라는 것이다.
-즉 매 2초마다 무슨 일이 일어나게 하고 싶을 때 쓰는 것이 interval이다.
+interval은 "매번" 일어나야 하는 무언가를 말한다.<br>
+예를 들어 "매 2초" 라고 하면 이것은 interval이라는 것이다.<br>
+즉 매 2초마다 무슨 일이 일어나게 하고 싶을 때 쓰는 것이 interval이다.<br>
 
-interval은 javascript가 해당 라인을 보자마자 실행된다.
-그러나 이렇게 바로 실행되는 것을 원하지 않고
-몇 초를 기다린 후 실행되길 원한다면 setTimeout을 사용하면 된다.
-
+interval은 javascript가 해당 라인을 보자마자 실행된다.<br>
+그러나 이렇게 바로 실행되는 것을 원하지 않고<br>
+몇 초를 기다린 후 실행되길 원한다면 setTimeout을 사용하면 된다.<br>
 이 둘은 비슷하게 생겼으나 동작은 완전히 다르다
 
 ```javascript
