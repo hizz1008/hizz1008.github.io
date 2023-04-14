@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "LocalStorage"
+title: "setInterval, setTimeout"
 categories: code
 tags: javascript-App
 toc: true

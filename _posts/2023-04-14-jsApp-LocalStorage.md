@@ -9,7 +9,7 @@ sidebar:
 nav: "counts"
 ---
 
-# LocalStorage
+# LocalStorage란?
 
 유저의 아이디를 저장하는 것은 매우 흔한 일이다.
 그러니 당연하게도 API가 존재하는데
