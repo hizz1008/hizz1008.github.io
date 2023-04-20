@@ -96,7 +96,7 @@ btn이 클릭 되었을 때 해당 item이 지워질 수 있게
 여기서 문제가 어떠한 item들이 클릭 되었는지 알기 위해<br>
 this의 부모노드의 정보를 가져오고 해당 부모를 삭제<br>
 
-#번외
+# 번외
 처음 submit을 했을 때 item이 추가되고<br>
 그 다음 item을 추가하기 위해 submit을 했을 때<br>
 deleteToDo 함수까지 실행이 되어서<br>
