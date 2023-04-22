@@ -79,7 +79,7 @@ setItem을 사용해 ("todos",toDos)로 저장했다.<br>
 ## JSON
 
 JSON은 자바스크립트 객체를 표현하기 위한 경량의 데이터 교환 형식으로<br>
-JSON은 텍스트로 구성되어 있으며, 쉽게 읽을 수 있고 쉽게 작성할 수 있다<br>
+텍스트로 구성되어 있으며, 쉽게 읽을 수 있고 쉽게 작성할 수 있다<br>
 또한, 다양한 프로그래밍 언어에서 사용할 수 있으므로,<br>
 서로 다른 플랫폼 간에 데이터를 교환하는 데 사용된다.<br>
 
@@ -120,3 +120,45 @@ js가 이해할 수 있는 array로 만들 수 있다는 것이다.<br>
 한번 생성된 데이터가 변경되지 않는다는 것을 의미하며<br>
 이를 통해 코드의 복잡도를 낮추고<br>
 디버깅과 테스트를 쉽게 할 수 있다는 장점이 있다.<br>
+
+# 날씨 API
+
+```javascript
+const API_KEY = "서비스키";
+function onGeoOk(position) {
+  const lat = position.coords.latitude;
+  const lon = position.coords.longitude;
+  const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`;
+  fetch(url)
+    .then((response) => response.json())
+    .then((data) => {
+      const temperature = document.querySelector(".temperature");
+      const name = document.querySelector(".name");
+
+      temperature.innerHTML = `${Math.floor(data.main.temp)}° @`;
+      name.innerHTML = data.name;
+    });
+}
+
+function onGeoError() {
+  alert("can`t find you. no weather for you.");
+}
+navigator.geolocation.getCurrentPosition(onGeoOk, onGeoError);
+```
+
+## navigator
+
+사용자의 위치를 알기위해 navigator함수를 사용했다.
+navigator함수는
+
+```javascript
+navigator.geolocation.getCurrentPosition(정상 작동 함수, 문제 발생 함수)
+```
+
+으로 사용한다
+
+## 번외
+
+fetch, then등 생소한 용어가 나와 해당 부분이 이해가 잘 안 가기도 하고 api사용에 따라
+백엔드가 작동하는 방식에 대한 지식이 부족한 것 같다고 느껴
+기본적인 백엔드 개념에 대해 공부할 예정이다.
