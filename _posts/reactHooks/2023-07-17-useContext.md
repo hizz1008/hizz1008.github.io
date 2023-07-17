@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "React Hooks"
+title: "useContext"
 categories: code
 tags: React-Hook
 toc: true
